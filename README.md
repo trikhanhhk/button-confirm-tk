@@ -15,12 +15,15 @@ You can install ButtonConfirm via npm:
 
 ```bash
 npm install button-confirm-tk
+```
 
 or
 
 ```bash
 yarn add button-confirm-tk
 ```
+
+![Application Screenshot](prevew.png)
 
 ## Usage
 
@@ -68,7 +71,7 @@ export default MyComponent;
 
 
 ## Version
-1.0.8
+1.0.0
 
 ## Author
 tk0038

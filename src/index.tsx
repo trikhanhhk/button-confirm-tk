@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Button, Overlay, Popover } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWarning } from '@fortawesome/free-solid-svg-icons';
+import { Button, Overlay, Popover } from 'react-bootstrap';
 
 type onCloseFunctionType = () => void;
 
@@ -25,7 +23,7 @@ const ButtonConfirm: React.FC<Props> = (props) => {
   const [target, setTarget] = useState<any>(null);
 
   useEffect(() => {
-    //click ra ngoài thì đóng option
+    //click ra ngoài thì đóng
     const handleClickOutside = (event: MouseEvent) => {
       if (ref.current && !ref.current.contains(event.target as Node)) {
         setShow(false);
@@ -70,7 +68,7 @@ const ButtonConfirm: React.FC<Props> = (props) => {
         containerPadding={20}
       >
         <Popover style={{ zIndex: `${zIndex ? "" + zIndex : "800"}` }}>
-          <Popover.Header as="h3"><FontAwesomeIcon icon={faWarning} /> {header ? header : "Warring"}</Popover.Header>
+          <Popover.Header as="h3">{header ? header : "Warring"}</Popover.Header>
           <Popover.Body>
             <p>{body}</p>
             <hr />

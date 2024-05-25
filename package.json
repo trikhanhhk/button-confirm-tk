@@ -1,11 +1,15 @@
 {
   "name": "button-confirm-tk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [
     "button confirm",
@@ -18,13 +22,11 @@
   "author": "tk0038",
   "license": "ISC",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.2",
-    "@fortawesome/free-brands-svg-icons": "^6.5.2",
-    "@fortawesome/free-regular-svg-icons": "^6.5.2",
-    "@fortawesome/free-solid-svg-icons": "^6.5.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@types/react-bootstrap": "^0.32.36",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
   }
 }
